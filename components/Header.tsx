@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -23,9 +24,13 @@ export function Header() {
             <div className="container mx-auto px-4 flex h-16 items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
-                    <span className="text-xl font-bold tracking-tight text-black">
-                        JESR AL <span className="text-[var(--color-brand-red)]">MANAMAH</span>.
-                    </span>
+                    <Image
+                        src="/logo.png"
+                        alt="JESR AL MANAMAH"
+                        width={50}
+                        height={50}
+                        className="object-contain"
+                    />
                 </Link>
 
                 {/* Centered Navigation */}
