@@ -16,6 +16,7 @@ export default function Home() {
         </div>
         <div className="container relative z-10 mx-auto px-4 text-center">
           <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-white md:text-6xl lg:text-7xl">
+            <span className="block mb-2 text-brand-red">JESR AL MANAMAH</span>
             Premium Spare Parts for
             <br />
             <span className="text-brand-red">All Major Japanese & Korean Brands</span>
