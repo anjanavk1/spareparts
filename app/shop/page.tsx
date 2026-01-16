@@ -79,7 +79,7 @@ function ShopContent() {
                             </div>
 
                             <div className="mb-6 border-t pt-6">
-                                <h3 className="font-semibold mb-3 text-gray-900">Oil Brand</h3>
+                                <h3 className="font-semibold mb-3 text-gray-900">Lubricants</h3>
                                 <div className="space-y-2">
                                     <Link href={`/shop${selectedBrand ? `?brand=${selectedBrand}` : ''}`}
                                         className={`block text-sm py-2 px-3 rounded-lg transition-colors ${!selectedCategory ? 'font-bold bg-brand-red text-white' : 'text-gray-600 hover:bg-gray-100'}`}>
