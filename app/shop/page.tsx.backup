@@ -45,6 +45,59 @@ function ShopContent() {
                 </section>
             )}
 
+            {/* Mitsubishi Brand Header - Shows when Mitsubishi brand is selected */}
+            {selectedBrand === 'Mitsubishi' && (
+                <section className="bg-gradient-to-br from-gray-900 via-black to-gray-900 py-12 md:py-16 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(230,57,70,0.15),transparent_50%)]"></div>
+                    <div className="container mx-auto px-4 relative z-10">
+                        <div className="text-center mb-8">
+                            <h1 className="text-3xl md:text-5xl font-bold text-white mb-3">
+                                Mitsubishi <span className="text-brand-red">Spare Parts</span>
+                            </h1>
+                            <p className="text-white/90 text-lg max-w-2xl mx-auto">
+                                Genuine spare parts for Mitsubishi vehicles - from passenger cars to commercial trucks
+                            </p>
+                        </div>
+
+                        {/* Vehicle Showcase */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mt-8">
+                            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+                                <div className="aspect-[4/3] relative mb-3">
+                                    <Image
+                                        src="/vehicles/mitsubishi-attrage.png"
+                                        alt="Mitsubishi Attrage"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <h3 className="text-white font-semibold text-center">Attrage / Sedan</h3>
+                            </div>
+                            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+                                <div className="aspect-[4/3] relative mb-3">
+                                    <Image
+                                        src="/vehicles/mitsubishi-outlander.png"
+                                        alt="Mitsubishi Outlander"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <h3 className="text-white font-semibold text-center">Outlander / SUV</h3>
+                            </div>
+                            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all">
+                                <div className="aspect-[4/3] relative mb-3">
+                                    <Image
+                                        src="/vehicles/mitsubishi-fuso.png"
+                                        alt="Mitsubishi Fuso"
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </div>
+                                <h3 className="text-white font-semibold text-center">Fuso / Commercial</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            )}
 
             <div className="container mx-auto px-4 py-8 md:py-12">
                 {!selectedCategory && (
