@@ -40,5 +40,4 @@ export const products: Product[] = [
 
   // UD Products (keeping existing)
   { id: '13', name: 'Spare Parts - UD Truck', brand: 'UD', category: 'Zic', sku: 'UD-TK-013', condition: 'New', image: '/vehicles/ud-truck.png' },
-  { id: '18', name: 'Spare Parts - UD Commercial', brand: 'UD', category: 'Dufe', sku: 'UD-COM-018', condition: 'New', image: '/vehicles/ud-truck.png' },
 ];
