@@ -2,7 +2,7 @@ export type Product = {
   id: string;
   name: string;
   brand: 'Mitsubishi' | 'Isuzu' | 'Toyota' | 'Nissan' | 'Hino' | 'UD' | 'Hyundai' | 'Kia';
-  category: 'Castrol' | 'Shell' | 'ADNOC' | 'Total' | 'Zic' | 'Dufe';
+  category: 'Castrol' | 'Shell' | 'ADNOC' | 'Total' | 'Zic' | 'Dufe' | 'BP';
   price?: number;
   image?: string;
   sku: string;
@@ -39,6 +39,6 @@ export const products: Product[] = [
   { id: '9', name: 'Spare Parts - Kia Seltos', brand: 'Kia', category: 'ADNOC', sku: 'KA-SL-009', condition: 'New', image: '/vehicles/kia-seltos.png' },
 
   // UD Products (keeping existing)
-  { id: '13', name: 'Radiator', brand: 'UD', category: 'Zic', sku: 'UD-RAD-013', condition: 'New', image: 'https://images.unsplash.com/photo-1585366119957-e9730b6d0f60?w=400&h=400&fit=crop' },
-  { id: '18', name: 'Battery', brand: 'UD', category: 'Dufe', sku: 'UD-BAT-018', condition: 'New', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400&h=400&fit=crop' },
+  { id: '13', name: 'Spare Parts - UD Truck', brand: 'UD', category: 'Zic', sku: 'UD-TK-013', condition: 'New', image: '/vehicles/ud-truck.png' },
+  { id: '18', name: 'Spare Parts - UD Commercial', brand: 'UD', category: 'Dufe', sku: 'UD-COM-018', condition: 'New', image: '/vehicles/ud-truck.png' },
 ];

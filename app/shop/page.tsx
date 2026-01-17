@@ -27,6 +27,7 @@ function ShopContent() {
         'Total',
         'Zic',
         'Dufe',
+        'BP',
     ];
 
     return (
