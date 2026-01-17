@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { products } from "@/lib/data";
 import { ArrowRight, Star, Phone } from "lucide-react";
+import { LubricantsSlider } from "@/components/LubricantsSlider";
 
 export default function Home() {
   const featuredProducts = products.slice(0, 8); // Display 8 products
@@ -186,38 +187,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-white">Premium Lubricants</h2>
           </div>
 
-          {/* Slider Container with overflow scroll */}
-          <div className="relative">
-            <div className="flex overflow-x-auto gap-8 pb-4 scrollbar-hide snap-x snap-mandatory">
-              {[
-                { name: 'Castrol', logo: '/oils/castrol.png' },
-                { name: 'Shell', logo: '/oils/shell.png' },
-                { name: 'ADNOC', logo: '/oils/adnoc.png' },
-                { name: 'Total', logo: '/oils/total.png' },
-                { name: 'Zic', logo: '/oils/zic.png' },
-                { name: 'Dufe', logo: '/oils/dufe.png' },
-                { name: 'BP', logo: '/oils/bp.png' },
-              ].map((oil, index) => (
-                <Link
-                  key={`${oil.name}-${index}`}
-                  href={`/shop?category=${encodeURIComponent(oil.name)}`}
-                  className="group flex-shrink-0 snap-center"
-                >
-                  <div className="bg-transparent rounded-xl transform hover:-translate-y-1 transition-all duration-300 w-48 h-48 flex items-center justify-center p-4 relative overflow-hidden">
-                    <div className="relative z-10 w-full h-full flex items-center justify-center">
-                      <Image
-                        src={oil.logo}
-                        alt={`${oil.name} logo`}
-                        width={180}
-                        height={120}
-                        className="object-contain max-h-32 transition-transform duration-500 group-hover:scale-110 filter drop-shadow-lg"
-                      />
-                    </div>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
+          <LubricantsSlider />
 
 
         </div>
